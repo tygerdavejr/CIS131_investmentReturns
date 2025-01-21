@@ -1,0 +1,19 @@
+#Expected Results
+
+Fomula: a = p(1 + r)^n
+p = 1000
+r = 7%
+n = 10, 20 and 30
+
+Expected results:
+10:  1967.15
+20:  3869.68
+30:  7612.26
+
+Actual results:
+The following output displays the investment returns as years and amount accrued
+on a principle of $1000 at a rate of 7%.
+
+10 years:  $1967.15
+20 years:  $3869.68
+30 years:  $7612.26
