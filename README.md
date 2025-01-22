@@ -43,7 +43,7 @@ CONSTANT RATE = 0.07
     END FUNCTION
 
 
-# Program entry point
+# PROGRAM ENTRY POINT
 
 IF __name__ == "__main__" THEN
     CALL main()
