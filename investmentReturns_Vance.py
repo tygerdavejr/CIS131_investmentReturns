@@ -50,6 +50,10 @@ def main():
         to process the amountAccrued at 10, 20 and 30 years.
         You can change this by modifying your multiplier vs loopCounter
         and down below in the while loop.
+
+        A more elegant solution would be to build a list with the year
+        values you wanted to use and then cycle through the list values,
+        but I didn't think about that when I wrote this.
     '''
     loopCounter = 1
     time = loopCounter * 10
