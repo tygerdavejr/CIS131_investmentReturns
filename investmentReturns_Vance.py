@@ -49,24 +49,19 @@ def main():
     '''
         You can change your times here.  The module is designed
         to process the amountAccrued at 10, 20 and 30 years.
-        You can change this by modifying your multiplier vs loopCounter
-        and down below in the while loop.
-
-        A more elegant solution would be to build a list with the year
-        values you wanted to use and then cycle through the list values,
-        but I didn't think about that when I wrote this.
+        Change the years in the list times to adjust your formula.
     '''
-    frequency = [10, 20, 30]
+    times = [10, 20, 30]
 
     # Process each year in the list one at a time until the list is complete
-    
-    for index in range(len(frequency[]));
 
-        amountAccrued = calculateInterestRates(frequency[index])
+    for time in times:
+    
+        amountAccrued = calculateInterestRates(time)
 
         print('The following output displays the investment returns as years and amount accrued')
         print(f'on a principle of ${PRINCIPLE} at a rate of {(RATE * 100):.0f}%.\n')
-        print(f'{frequency[index]} years:  ${amountAccrued:.2f}')
+        print(f'{time} years:  ${amountAccrued:.2f}')
         
     return
 
