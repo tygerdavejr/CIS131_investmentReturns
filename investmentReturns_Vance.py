@@ -3,7 +3,7 @@
     action: a. Calculates interest on $1000 for 10, 20 and 30 years at 7%
             b. Display results
     author: David Vance
-    date: 6 June 2025
+    date:   6 June 2025
 '''
 
 
@@ -46,24 +46,15 @@ def main():
     output: message to user
     return: none
     '''
-    
-    #local variables
-    '''
-        You can change your times here.  The module is designed
-        to process the amountAccrued at 10, 20 and 30 years.
-        Change the years in the list times to adjust your formula.
-    '''
-
 
     # Process each year in the list one at a time until the list is complete
+    print('The following output displays the investment returns as years and amount accrued')
+    print(f'on a principle of ${PRINCIPLE} at a rate of {(RATE * 100):.0f}%.\n')
 
     for time in TIMES:
     
         amountAccrued = calculateInterestRates(time)
-
-        print('The following output displays the investment returns as years and amount accrued')
-        print(f'on a principle of ${PRINCIPLE} at a rate of {(RATE * 100):.0f}%.')
-        print(f'{time} years:  ${amountAccrued:.2f}%.\n')
+        print(f'{time} years:  ${amountAccrued:.2f}')
         
     return
 
