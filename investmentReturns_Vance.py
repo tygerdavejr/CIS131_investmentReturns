@@ -7,11 +7,12 @@
 '''
 
 
-#global variables
+#global constants and variables
 '''
-    You can change your values for some of the program here.
-    Adjust principle and rate as you need.
+    You can change your values for the program here.
+    Adjust principle and rate based on loan parameters.
 '''
+
 PRINCIPLE = 1000
 RATE = .07
 
@@ -55,20 +56,20 @@ def main():
         values you wanted to use and then cycle through the list values,
         but I didn't think about that when I wrote this.
     '''
-    loopCounter = 1
-    time = loopCounter * 10
-    
-    print('The following output displays the investment returns as years and amount accrued')
-    print(f'on a principle of ${PRINCIPLE} at a rate of {(RATE * 100):.0f}%.\n')
+    frequency = [10, 20, 30]
 
-    # call function while time <= 30 years
-    while time <= 30:
-        amountAccrued = calculateInterestRates(time)
+    # Process each year in the list one at a time until the list is complete
+    
+    for index in range(len(frequency[]));
+
+        amountAccrued = calculateInterestRates(frequency[index])
+
+        print('The following output displays the investment returns as years and amount accrued')
+        print(f'on a principle of ${PRINCIPLE} at a rate of {(RATE * 100):.0f}%.\n')
+        print(f'{frequency[index]} years:  ${amountAccrued:.2f}')
         
-        print(f'{time} years:  ${amountAccrued:.2f}')
-        loopCounter += 1
-        time = loopCounter * 10
     return
+
 
 
 if __name__ == '__main__':
